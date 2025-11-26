@@ -86,7 +86,7 @@ You can either clone the repository using Git or download the ZIP file manually.
 
 ### Option 1 — Clone with Git
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/Baders-Account/assignment-2.git  cd assignment-2   `
+ git clone https://github.com/Baders-Account/assignment-2.git  cd assignment-2   `
 
 ### Option 2 — Download ZIP
 
@@ -102,7 +102,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 Navigate into the project directory:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd assignment-2   `
+  cd assignment-2   `
 
 3\. Run the Website
 -------------------
@@ -112,3 +112,4 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 1.  Double-click the index.html file.
     
 2.  It will open in your default browser (Chrome, Edge, or Firefox).
+
