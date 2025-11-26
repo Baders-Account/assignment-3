@@ -48,7 +48,7 @@ function toggleTheme() {
 - **Topic-based Repositories:**  
   `https://api.github.com/search/repositories?q=user:Baders-Account+topic:{topic}`
 
----
+---j
 
 ## Form Validation
 
@@ -109,3 +109,4 @@ Cards, text, and images automatically adjust spacing and alignment for a consist
 
 5. **Contact Form**  
    - User enters data → validation runs → **Submit** button activates once all inputs are valid.
+
