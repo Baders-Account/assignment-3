@@ -39,7 +39,6 @@ function toggleTheme() {
 }
 
 ## GitHub API Integration
-
 ### API Endpoints
 
 - **Starred Repositories:**  
@@ -48,7 +47,7 @@ function toggleTheme() {
 - **Topic-based Repositories:**  
   `https://api.github.com/search/repositories?q=user:Baders-Account+topic:{topic}`
 
----j
+---
 
 ## Form Validation
 
@@ -60,21 +59,23 @@ Form validation is implemented in **Vanilla JavaScript** using **Bootstrap’s v
 - Validates **name**, **email**, and **message** fields using regular expressions and length checks.  
 - Displays inline feedback using the Bootstrap classes `.is-valid` and `.is-invalid`.
 
+---
+
 ## Styling and UI/UX
 
 ### Light Theme
-- **Background:** `#e6ccb2`
-- **Text:** `#22333B`
+- **Background:** `#e6ccb2`  
+- **Text:** `#22333B`  
 - **Buttons:** Bootstrap **primary/light** scheme
 
 ### Dark Theme
-- **Background:** `#22333B`
-- **Text:** `#e6ccb2`
+- **Background:** `#22333B`  
+- **Text:** `#e6ccb2`  
 - **Inverted Colors:** Applied to cards, labels, and navbar
 
 ### Components Styled
-- Navbar with hover transitions
-- Cards with `rounded-4` and `shadow-sm` for smooth appearance
+- Navbar with hover transitions  
+- Cards with `rounded-4` and `shadow-sm` for smooth appearance  
 - Buttons with hover opacity and motion transitions
 
 ---
@@ -109,4 +110,6 @@ Cards, text, and images automatically adjust spacing and alignment for a consist
 
 5. **Contact Form**  
    - User enters data → validation runs → **Submit** button activates once all inputs are valid.
+
+
 
