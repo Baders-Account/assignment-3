@@ -204,5 +204,3 @@ setInterval(() => {
 }, 1000);
 
 
-
-//  GREET RETURNING USER
