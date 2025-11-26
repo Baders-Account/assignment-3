@@ -112,6 +112,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (savedTheme === "dark") {
       document.body.classList.add("dark-mode");
     }
+   
+
+    const savedName = localStorage.getItem("name");
+  if (savedName) {
+    document.getElementById("cus").innerHTML = `<h3 class="mt-3">Welcome back, ${savedName}! </h3>`;
+  }
  
 
 });
@@ -180,6 +186,9 @@ const validateMessage = () => {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   if (validateName() && validateEmail() && validateMessage()) {
+    // Save visitor name
+    localStorage.setItem("name", userName.value);
+
     alert(`Thank you, ${userName.value}! Your message has been received.`);
     form.reset();
     [userName, email, message].forEach((input) => input.classList.remove('is-valid'));
@@ -193,3 +202,7 @@ setInterval(() => {
   seconds++;
   document.getElementById("timer").textContent = `Time on site: ${seconds}s`;
 }, 1000);
+
+
+
+//  GREET RETURNING USER

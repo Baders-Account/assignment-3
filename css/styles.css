@@ -147,6 +147,17 @@ option{
 
 }
 
+#sortProjects{
+    background-color: #22333B;
+    color: #e6ccb2;
+}
+
+#sortProjects option{
+    color:#e6ccb2 ;
+
+}
+
+
 
 /* DARK MODE */
 .dark-mode {
@@ -259,6 +270,17 @@ option{
     color:#22333B ;
 
 }
+
+.dark-mode #sortProjects{
+    background-color: #e6ccb2;
+    color: #22333B;
+}
+
+.dark-mode #sortProjects option{
+    color:#22333B ;
+
+}
+
 
 
 
