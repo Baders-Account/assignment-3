@@ -30,7 +30,12 @@
           <li class="nav-item mx-2">
             <button id="mode" class="btn btn-outline-light px-3 py-1" id="btn" type="button" onclick="toggleTheme()">Change Theme</button>
           </li>
+          <li class="nav-item">
+                <span id="timer" class="nav-link">Time on site: 0s</span>
+          </li>
+
         </ul>
+        
       </div>
     </nav>
   </header>
@@ -40,7 +45,7 @@
     
     <section id="intro" class="text-center mb-5">
       <h1 class="mb-3">Welcome! This is my portfolio</h1>
-      <img src="assets/images/photo.jpg" alt="Bader Almutairi" class="rounded-circle img-fluid mb-3" style="max-width: 200px;">
+      <img src="assets/images/Mee.jpg" alt="Bader Almutairi" class="rounded-circle img-fluid mb-3" style="max-width: 200px;">
       <p class="lead">I'm <strong>Bader Almutairi</strong></p>
     </section>
 
@@ -55,15 +60,36 @@
    
     <section id="projects" class="mb-5">
       <h3 class="text-center mb-4 ">My Projects</h3>
-      <label for="choices" class="form-label">Filter Projects</label>
-      <select id="choices" name="choices" class="form-select w-auto mb-4 cursor-pointer" onchange="changeProjects(this.value)">
-        <option value="all">All Projects</option>
-        <option value="data-science">Data Science Project</option>
-        <option value="webdevelopment">Web Development Projects</option>
-        <option value="cybersecurity">Cyber Security Projects</option>
-      </select>
+        <section class="flex flex-row items-start gap-6">
 
-      <div id="projects-container" class="row g-4 "></div>
+  <div>
+    <label for="choices" class="form-label">Filter Projects</label>
+    <select id="choices" class="form-select w-auto mb-4 cursor-pointer" onchange="changeProjects(this.value)">
+      <option value="all">All Projects</option>
+      <option value="data-science">Data Science Projects</option>
+      <option value="webdevelopment">Web Development Projects</option>
+      <option value="cybersecurity">Cyber Security Projects</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="sortProjects" class="form-label">Sort Projects</label>
+    <select id="sortProjects" class="form-select w-auto mb-4 cursor-pointer" >
+      <option value="default">Default</option>
+      <option value="newest">Newest</option>
+      <option value="oldest">Oldest</option>
+      <option value="az">A–Z</option>
+    </select>
+  </div>
+
+</section>
+
+
+      
+
+      <div id="projects-container" class="row g-4 ">
+
+      </div>
 
         
       </div>

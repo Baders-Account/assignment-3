@@ -25,6 +25,7 @@ function toggleTheme() {
 
 const changeProjects = (value) => {
     const choice = value;
+    
     let url ;
     if (choice === 'all') {
         url = "https://api.github.com/users/Baders-Account/starred";
@@ -34,6 +35,9 @@ const changeProjects = (value) => {
     else{
         url = `https://api.github.com/search/repositories?q=user:Baders-Account+topic:${choice}`
     }
+
+    
+
     const projectsContainer = document.getElementById('projects-container');
 
     // Loading while fetching
@@ -52,7 +56,16 @@ const changeProjects = (value) => {
                 projectsContainer.innerHTML = '';
         const repos = Array.isArray(data) ? data : data.items;
  
-        
+        // Sorting Logic
+            const sortVal = document.getElementById("sortProjects").value;
+
+            if (sortVal === "newest") {
+                repos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));}  
+            else if (sortVal === "oldest") {
+                repos.sort((a, b) => new Date(a.created_at) - new Date(b.created_at));}      
+            else if (sortVal === "az") {
+                repos.sort((a, b) => a.name.localeCompare(b.name));}
+
 
        repos.forEach(project => {
  
@@ -64,7 +77,7 @@ const changeProjects = (value) => {
             link.href = project.html_url;
             link.target = '_blank';
             link.className = 'anchors'; 
-
+            
   
             const card = document.createElement('div');
             card.className = 'card shadow-sm h-100 rounded-4'; 
@@ -102,6 +115,14 @@ document.addEventListener("DOMContentLoaded", () => {
  
 
 });
+
+document.getElementById("sortProjects").addEventListener("change", () => {
+    
+    const filter = document.getElementById("choices").value;
+    changeProjects(filter);
+});
+
+
 
 
 
@@ -165,3 +186,10 @@ form.addEventListener('submit', (e) => {
     submitBtn.disabled = true;
   }
 });
+
+
+let seconds = 0;
+setInterval(() => {
+  seconds++;
+  document.getElementById("timer").textContent = `Time on site: ${seconds}s`;
+}, 1000);
